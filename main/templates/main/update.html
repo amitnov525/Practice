@@ -1,0 +1,17 @@
+{% extends 'main/home.html'%}
+{% block content%}
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <h2 class="text-center alert alert-info"> Update Student</h2>
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{fm}}
+                <br>
+                <input type="submit" class="btn btn-success" valus="Update">
+                <a href="{% url 'home' %}" class="btn btn-info">Back To Home</a>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock%}

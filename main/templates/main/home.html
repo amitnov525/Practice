@@ -15,10 +15,12 @@
     </head>
     <body>
         <h2 class="text-center alert alert-danger"> Function Based Views</h2>
+        {% block content%}
 
         
         <script src="{% static 'main/js/jquery.js' %}"></script>
         <script src="{% static 'main/js/bootstrap.js' %}"></script>
         <script src="{% static 'main/js/popper.js' %}"></script>
+        {% endblock%}
     </body>
 </html>
